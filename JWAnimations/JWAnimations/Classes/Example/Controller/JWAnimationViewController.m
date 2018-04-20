@@ -64,10 +64,10 @@
         }
             break;
         case JWReplicatorLayerHeart:
-            
+            [animationView.layer addSublayer:[JWReplicatorLayerAnimation replicatorLayer_Heart]];
             break;
         case JWReplicatorLayerTurn:
-            
+            [animationView.layer addSublayer:[JWReplicatorLayerAnimation replicatorLayer_Turn]];
             break;
         case JWReplicatorLayerArrow:
             [animationView.layer addSublayer:[JWReplicatorLayerAnimation replicatorLayer_Arrow]];

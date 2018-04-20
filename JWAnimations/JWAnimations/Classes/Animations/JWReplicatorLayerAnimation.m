@@ -246,10 +246,37 @@
     
 }
 
-//// 心跳
-//+ (CALayer *)replicatorLayer_Heart {
-//    
-//}
+// 心跳
++ (CALayer *)replicatorLayer_Heart {
+    CAShapeLayer *ovalLayer = [CAShapeLayer layer];
+    ovalLayer.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 20, 20)].CGPath;
+    ovalLayer.fillColor = [UIColor redColor].CGColor;
+    
+    UIBezierPath *animationPath = [UIBezierPath bezierPath];
+    [animationPath moveToPoint:CGPointMake(100, 50)];
+    [animationPath addQuadCurveToPoint:CGPointMake(100, 300) controlPoint:CGPointMake(0, 0)];
+    [animationPath addQuadCurveToPoint:CGPointMake(100, 50) controlPoint:CGPointMake(200, 0)];
+    
+    CAKeyframeAnimation *keyframeAnimation = [CAKeyframeAnimation animation];
+    keyframeAnimation.keyPath = @"position";
+    keyframeAnimation.path = animationPath.CGPath;
+    keyframeAnimation.duration = 2;
+    keyframeAnimation.repeatCount = HUGE;
+    keyframeAnimation.rotationMode = @"auto";
+    keyframeAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    
+    [ovalLayer addAnimation:keyframeAnimation forKey:nil];
+    
+    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
+    replicatorLayer.frame = CGRectMake(10, 10, ovalLayer.frame.size.width, ovalLayer.frame.size.height);
+    replicatorLayer.instanceCount = 20;
+    replicatorLayer.instanceDelay = 2.0/20.0;
+    [replicatorLayer addSublayer:ovalLayer];
+    
+    
+    return replicatorLayer;
+    
+}
 
 // 箭头
 + (CALayer *)replicatorLayer_Arrow {
@@ -321,7 +348,43 @@
     
 }
 
+// 模仿tumblr加载动画
++ (CALayer *)replicatorLayer_Turn {
+    CALayer *layer = [CALayer layer];
+    layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+    layer.frame = CGRectMake(0, 0, 20, 30);
+    layer.cornerRadius = 5;
+    
+    CABasicAnimation *animation1 = [CABasicAnimation animation];
+    animation1.keyPath = @"transform";
+    animation1.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
+    animation1.toValue = [NSValue valueWithCATransform3D:CATransform3DScale(CATransform3DIdentity, 1, 0.7, 1)];
+    
+    CABasicAnimation *animation2 = [CABasicAnimation animation];
+    animation2.keyPath = @"backgroundColor";
+    animation2.fromValue = (__bridge id)[UIColor lightGrayColor].CGColor;
+    animation2.toValue = (__bridge id)[UIColor colorWithWhite:0.98 alpha:1].CGColor;
 
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    animationGroup.animations = @[animation1, animation2];
+    animationGroup.duration = 0.3;
+    animationGroup.repeatCount = HUGE;
+    animationGroup.autoreverses = YES;
+    animationGroup.removedOnCompletion = NO;
+    
+    [layer addAnimation:animationGroup forKey:nil];
+    
+    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
+    replicatorLayer.instanceCount = 3;
+    replicatorLayer.instanceDelay = 0.3/3.0;
+    replicatorLayer.instanceTransform = CATransform3DTranslate(CATransform3DIdentity, 25, 0, 0);
+    [replicatorLayer addSublayer:layer];
+    
+    replicatorLayer.position = CGPointMake(100, 100);
+    
+    return replicatorLayer;
+    
+}
 
 
 

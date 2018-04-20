@@ -43,6 +43,9 @@ typedef NS_ENUM(NSUInteger, JWReplicatorLayerType) {
 // 心跳
 + (CALayer *)replicatorLayer_Heart;
 
+// 模仿tumblr加载动画
++ (CALayer *)replicatorLayer_Turn;
+
 // 箭头
 + (CALayer *)replicatorLayer_Arrow;
 @end
