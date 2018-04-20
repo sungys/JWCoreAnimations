@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		08B538EB2086F0BD00963EAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B538EA2086F0BD00963EAA /* AppDelegate.m */; };
-		08B538EE2086F0BD00963EAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B538ED2086F0BD00963EAA /* ViewController.m */; };
 		08B538F12086F0BD00963EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B538EF2086F0BD00963EAA /* Main.storyboard */; };
 		08B538F32086F0BE00963EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B538F22086F0BE00963EAA /* Assets.xcassets */; };
 		08B538F62086F0BE00963EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B538F42086F0BE00963EAA /* LaunchScreen.storyboard */; };
 		08B538F92086F0BE00963EAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B538F82086F0BE00963EAA /* main.m */; };
 		08B539032086F0BE00963EAA /* JWAnimationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B539022086F0BE00963EAA /* JWAnimationsTests.m */; };
 		08B5390E2086F0BE00963EAA /* JWAnimationsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B5390D2086F0BE00963EAA /* JWAnimationsUITests.m */; };
+		08B539232086F28000963EAA /* JWAnimationsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B539222086F28000963EAA /* JWAnimationsListTableViewController.m */; };
+		08B5392820870ED100963EAA /* JWAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B5392720870ED100963EAA /* JWAnimationViewController.m */; };
+		08B5392E20870F8100963EAA /* JWReplicatorAnimationListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B5392D20870F8100963EAA /* JWReplicatorAnimationListTableViewController.m */; };
+		08B539312087124900963EAA /* JWReplicatorLayerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08B539302087124900963EAA /* JWReplicatorLayerAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,6 @@
 		08B538E62086F0BD00963EAA /* JWAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B538E92086F0BD00963EAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08B538EA2086F0BD00963EAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		08B538EC2086F0BD00963EAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		08B538ED2086F0BD00963EAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		08B538F02086F0BD00963EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08B538F22086F0BE00963EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B538F52086F0BE00963EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,14 @@
 		08B539092086F0BE00963EAA /* JWAnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWAnimationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B5390D2086F0BE00963EAA /* JWAnimationsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWAnimationsUITests.m; sourceTree = "<group>"; };
 		08B5390F2086F0BE00963EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B539212086F28000963EAA /* JWAnimationsListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWAnimationsListTableViewController.h; sourceTree = "<group>"; };
+		08B539222086F28000963EAA /* JWAnimationsListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWAnimationsListTableViewController.m; sourceTree = "<group>"; };
+		08B5392620870ED100963EAA /* JWAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWAnimationViewController.h; sourceTree = "<group>"; };
+		08B5392720870ED100963EAA /* JWAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWAnimationViewController.m; sourceTree = "<group>"; };
+		08B5392C20870F8100963EAA /* JWReplicatorAnimationListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWReplicatorAnimationListTableViewController.h; sourceTree = "<group>"; };
+		08B5392D20870F8100963EAA /* JWReplicatorAnimationListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWReplicatorAnimationListTableViewController.m; sourceTree = "<group>"; };
+		08B5392F2087124900963EAA /* JWReplicatorLayerAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWReplicatorLayerAnimation.h; sourceTree = "<group>"; };
+		08B539302087124900963EAA /* JWReplicatorLayerAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWReplicatorLayerAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,8 @@
 		08B538E82086F0BD00963EAA /* JWAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				08B538E92086F0BD00963EAA /* AppDelegate.h */,
-				08B538EA2086F0BD00963EAA /* AppDelegate.m */,
-				08B538EC2086F0BD00963EAA /* ViewController.h */,
-				08B538ED2086F0BD00963EAA /* ViewController.m */,
+				08B5391E2086F22B00963EAA /* Application */,
+				08B5391D2086F22600963EAA /* Classes */,
 				08B538EF2086F0BD00963EAA /* Main.storyboard */,
 				08B538F22086F0BE00963EAA /* Assets.xcassets */,
 				08B538F42086F0BE00963EAA /* LaunchScreen.storyboard */,
@@ -130,6 +137,62 @@
 				08B5390F2086F0BE00963EAA /* Info.plist */,
 			);
 			path = JWAnimationsUITests;
+			sourceTree = "<group>";
+		};
+		08B5391D2086F22600963EAA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08B5391F2086F25700963EAA /* Example */,
+				08B539202086F26400963EAA /* Animations */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		08B5391E2086F22B00963EAA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				08B538E92086F0BD00963EAA /* AppDelegate.h */,
+				08B538EA2086F0BD00963EAA /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		08B5391F2086F25700963EAA /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				08B5392520870D8600963EAA /* Model */,
+				08B5392420870D7E00963EAA /* Controller */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		08B539202086F26400963EAA /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				08B5392F2087124900963EAA /* JWReplicatorLayerAnimation.h */,
+				08B539302087124900963EAA /* JWReplicatorLayerAnimation.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		08B5392420870D7E00963EAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				08B539212086F28000963EAA /* JWAnimationsListTableViewController.h */,
+				08B539222086F28000963EAA /* JWAnimationsListTableViewController.m */,
+				08B5392C20870F8100963EAA /* JWReplicatorAnimationListTableViewController.h */,
+				08B5392D20870F8100963EAA /* JWReplicatorAnimationListTableViewController.m */,
+				08B5392620870ED100963EAA /* JWAnimationViewController.h */,
+				08B5392720870ED100963EAA /* JWAnimationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		08B5392520870D8600963EAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +257,7 @@
 		08B538DE2086F0BD00963EAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JW;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = sjw;
 				TargetAttributes = {
@@ -262,8 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B538EE2086F0BD00963EAA /* ViewController.m in Sources */,
+				08B539312087124900963EAA /* JWReplicatorLayerAnimation.m in Sources */,
+				08B5392E20870F8100963EAA /* JWReplicatorAnimationListTableViewController.m in Sources */,
 				08B538F92086F0BE00963EAA /* main.m in Sources */,
+				08B539232086F28000963EAA /* JWAnimationsListTableViewController.m in Sources */,
+				08B5392820870ED100963EAA /* JWAnimationViewController.m in Sources */,
 				08B538EB2086F0BD00963EAA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +503,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QV8A622H75;
 				INFOPLIST_FILE = JWAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QV8A622H75;
 				INFOPLIST_FILE = JWAnimations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

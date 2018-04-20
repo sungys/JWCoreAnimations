@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JWReplicatorAnimationListTableViewController.h
 //  JWAnimations
 //
 //  Created by sunjiawen on 2018/4/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JWReplicatorAnimationListTableViewController : UITableViewController
 
 @end
-
